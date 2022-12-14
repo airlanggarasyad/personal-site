@@ -1,5 +1,9 @@
 import ProjectCard from "./components/projectCard";
+
 import PROJECTS from "./constants/projects";
+import TECH_STACKS from "./constants/techStacks";
+
+import './App.css';
 
 function App() {
   return (
@@ -18,7 +22,14 @@ function App() {
             ))}
         </div>
         <div>
-          <h2>🛠️ Tech Stacks</h2>
+          <h2>🖥️ Tech Stacks</h2>
+          <div style={{display:"flex"}}>
+          {TECH_STACKS.map((stack, i) => (
+              <div key={i} className="tech-stacks-icon">
+                <img style={{width:"5em"}} src={stack.imageURL}/>
+              </div>
+            ))}
+            </div>
         </div>
       </div>
     </>

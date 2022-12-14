@@ -1,0 +1,11 @@
+.tech-stacks-icon {
+  display: flex;
+  align-items: center;
+  margin: 0 1.5em;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.tech-stacks-icon:hover {
+  opacity: 1;
+}

@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
       <img
         className="project-img"
         style={CardStyle.projectImage}
-        src="https://buildwithangga.com/storage/assets/thumbnail_tips/WW4vqalir5DRQuOj1jHLVXA3MSxbWO33hiAhTEQP.png"
+        src={props.imageURL}
       />
       <div className="content-contaiener" style={{ padding: "1em" }}>
         <h3 className="project-title" style={CardStyle.projectTitle}>
@@ -25,8 +25,7 @@ const ProjectCard = (props) => {
         </div>
         <div style={{ width: "100%" }}>
           <p style={{ fontSize: "0.8em", margin: 0 }}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-            repellat voluptas cumque sit.
+            {props.description}
           </p>
         </div>
       </div>
