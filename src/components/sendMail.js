@@ -23,10 +23,11 @@ const SendMail = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert("Message sent!");
+          window.location.reload()
         },
         (error) => {
-          console.log(error.text);
+          console.alert(error.text);
         }
       );
   };
