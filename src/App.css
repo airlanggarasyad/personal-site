@@ -47,4 +47,8 @@ h2 span {
     align-items: center;
     justify-content: center;
   }
+
+  .home-mail-container {
+    margin: 0.7em !important;
+  }
 }
