@@ -1,4 +1,5 @@
 import ProjectCard from "./components/projectCard";
+import SendMail from "./components/sendMail";
 
 import PROJECTS from "./constants/projects";
 import TECH_STACKS from "./constants/techStacks";
@@ -15,7 +16,7 @@ function App() {
             src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Phil_Collins_1_%28cropped%29.jpg"
           />
         </div> */}
-        <div className="rigt" >
+        <div className="rigt">
           <h1 style={{ marginBottom: 0 }}>Airlangga R. Fidiyanto</h1>
           <h3 style={{ margin: 0, fontSize: "1.1em" }}>
             Front-end Developer and IoT Enthusiast
@@ -29,7 +30,7 @@ function App() {
       </div>
       <div>
         <h2>
-          <span style={{paddingLeft:0}}>🛠️ Projects</span>
+          <span style={{ paddingLeft: 0 }}>🛠️ Projects</span>
         </h2>
       </div>
       <div style={{ display: "flex", flexWrap: "wrap", margin: "2.2em 0" }}>
@@ -43,7 +44,7 @@ function App() {
       </div>
       <div>
         <h2>
-          <span style={{paddingLeft:0}}>🖥️ Tech Stacks</span>
+          <span style={{ paddingLeft: 0 }}>🖥️ Tech Stacks</span>
         </h2>
         <div style={{ display: "flex", flexWrap: "wrap", margin: "2.2em 0" }}>
           {TECH_STACKS.map((stack, i) => (
@@ -53,16 +54,14 @@ function App() {
           ))}
         </div>
       </div>
-      {/* <div>
+      <div>
         <h2>
-          <span style={{paddingLeft:0}}>📝 Let's Get Connected</span>
+          <span style={{ paddingLeft: 0 }}>📝 Let's Get Connected</span>
         </h2>
-        <div
-          style={{ display: "flex", flexWrap: "wrap", margin: "2.2em 0.8em" }}
-        >
-          LinkedIN
+        <div style={{margin: "2em"}}>
+          <SendMail />
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
