@@ -33,11 +33,11 @@ function App() {
           <span style={{ paddingLeft: 0 }}>🛠️ Projects</span>
         </h2>
       </div>
-      <div style={{ display: "flex", flexWrap: "wrap", margin: "2.2em 0" }}>
+      <div className="project-container" style={{ display: "flex", flexWrap: "wrap", margin: "2.2em 0" }}>
         {PROJECTS.slice(0)
           .reverse()
           .map((project, i) => (
-            <div key={i} style={{ width: "33.33%" }}>
+            <div className="card" key={i}>
               <ProjectCard {...project} />
             </div>
           ))}
