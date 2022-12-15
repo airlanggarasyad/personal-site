@@ -16,7 +16,7 @@ function App() {
           />
         </div> */}
         <div className="rigt" >
-          <h1 style={{ marginBottom: 0 }}>Airlangga Fidiyanto</h1>
+          <h1 style={{ marginBottom: 0 }}>Airlangga R. Fidiyanto</h1>
           <h3 style={{ margin: 0, fontSize: "1.1em" }}>
             Front-end Developer and IoT Enthusiast
           </h3>
