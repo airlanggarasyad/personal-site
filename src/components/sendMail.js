@@ -1,4 +1,11 @@
 import React, { useRef } from "react";
+import {
+  FaSpotify,
+  FaInstagram,
+  FaGithub,
+  FaStackOverflow,
+} from "react-icons/fa";
+
 import emailjs from "@emailjs/browser";
 
 const SendMail = () => {
@@ -27,8 +34,8 @@ const SendMail = () => {
   return (
     <>
       <div>
-        <div style={{display:"flex"}}>
-          <div style={{ width: "50%", padding:"0.5em" }}>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <div style={{ width: "50%", padding: "0.5em" }}>
             <h3 style={{ fontSize: "1.5 em" }}>👇 Send me an e-mail!</h3>
             <form
               ref={form}
@@ -52,8 +59,83 @@ const SendMail = () => {
               </div>
             </form>
           </div>
-          <div style={{ width: "50%", padding:"0.5em" }}>
-            <h3 style={{ fontSize: "1.5 em" }}>📱 Or visit my social media</h3>
+          <div
+            style={{
+              width: "50%",
+              padding: "0.5em",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <div>
+              <h3 style={{ fontSize: "1.5 em" }}>
+                📱 Or visit my social media
+              </h3>
+              <a
+                href="https://open.spotify.com/user/airlanggarsyd"
+                target="_blank"
+              >
+                <div style={style.socialIcon}>
+                  <FaSpotify
+                    color="#1DB954"
+                    size={40}
+                    style={{ marginRight: "0.5em" }}
+                  />
+                  <span>
+                    <b>Spotify</b>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                    airlanggarsyd
+                  </span>
+                </div>
+              </a>
+              <a
+                href="https://github.com/airlanggarasyad"
+                target="_blank"
+              >
+                <div style={style.socialIcon}>
+                  <FaGithub
+                    color="#333"
+                    size={40}
+                    style={{ marginRight: "0.5em" }}
+                  />
+                  <span>
+                    <b>GitHub</b>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                    airlanggarasyad
+                  </span>
+                </div>
+              </a>
+              <a
+                href="https:/instagram.com/airlanggarasyad"
+                target="_blank"
+              >
+                <div style={style.socialIcon}>
+                  <FaInstagram
+                    color="#833ab4"
+                    size={40}
+                    style={{ marginRight: "0.5em" }}
+                  />
+                  <span>
+                    <b>Instagram</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                    airlanggarasyad
+                  </span>
+                </div>
+              </a>
+              <a
+                href="airlanggarasyad.com"
+              >
+                <div style={style.socialIcon}>
+                  <FaStackOverflow
+                    color="#f48024"
+                    size={40}
+                    style={{ marginRight: "0.5em" }}
+                  />
+                  <span>
+                    <b>Stack Overflow</b> : Airlangga Fidiyanto
+                  </span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -98,5 +180,10 @@ const style = {
     width: "6em",
     padding: "0.3em 1em",
     borderRadius: "1200px",
+  },
+  socialIcon: {
+    display: "flex",
+    alignItems: "center",
+    margin: "0.5em 0",
   },
 };
