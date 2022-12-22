@@ -74,7 +74,7 @@ const SendMail = () => {
                 <a href={social.socialURL}>
                   <div style={style.socialIcon}>
                     {social.socialComponent}
-                    <div style={{ display: "flex", flexDirection: "column", margin:"0.3em 0" }}>
+                    <div className="social-info" style={{ display: "flex", flexDirection: "column", margin:"0.3em 0" }}>
                       <span>
                         <b>{social.title}</b>
                       </span>
