@@ -1,3 +1,6 @@
+.project-card-container {
+  min-height: 19rem;
+}
 .project-card-container:hover {
   transform: scale(1.05);
 }
