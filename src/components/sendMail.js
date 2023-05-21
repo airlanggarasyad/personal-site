@@ -89,7 +89,7 @@ const SendMail = () => {
                 </div>
               </a>
               <a
-                href="https://github.com/airlanggarasyad"
+                href="https://github.com/cherryplcked"
                 target="_blank"
               >
                 <div style={style.socialIcon}>
