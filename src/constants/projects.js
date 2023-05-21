@@ -6,7 +6,7 @@ const PROJECTS = [
     isConfidential: false,
     imageURL: process.env.PUBLIC_URL + "/img/homepage/projects/nywa.webp",
     techStacks: ["React.js", "OpenWeather API"],
-    description: "Lorem Ipsum 1233",
+    description: "My first React.js project. Used OpenWeather API to fetch weather data.",
   },
   {
     id: 1,
@@ -15,7 +15,7 @@ const PROJECTS = [
     isConfidential: false,
     imageURL: process.env.PUBLIC_URL + "/img/homepage/projects/kembara-loka.webp",
     techStacks: ["React.js", "Three.js"],
-    description: "Lorem Ipsum 1233",
+    description: "The first campus 3D map in Indonesia. Created using React.js framework and Three.js libary.",
   },
   {
     id: 2,

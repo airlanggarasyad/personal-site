@@ -1,47 +1,66 @@
 import ProjectCard from "./components/projectCard";
 import SendMail from "./components/sendMail";
+import EducationCard from "./components/education";
+import ExperienceCard from "./components/experiences";
 
 import PROJECTS from "./constants/projects";
 import TECH_STACKS from "./constants/techStacks";
+import EDUCATIONS from "./constants/educations";
+import EXPERIENCES from "./constants/experiences";
 
 import "./App.css";
 
-function App() {
+const TitleSection = () => {
   return (
-    <>
-      <div style={{ marginBottom: "5vh" }}>
-        {/* <div className="left" style={{ display: "flex", paddingRight: "2em" }}>
-          <img
-            style={{ width: "8em", height: "8em" }}
-            src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Phil_Collins_1_%28cropped%29.jpg"
-          />
-        </div> */}
-        <div className="rigt">
-          <h1 style={{ marginBottom: 0 }}>Airlangga R. Fidiyanto</h1>
-          <h3 style={{ margin: 0, fontSize: "1.1em" }}>
-            Front-end Developer and IoT Enthusiast
-          </h3>
-          <p>
-            Long life learner software engineer mainly focused on Web
-            Development and UI/UX design. Interested in computer science, web
-            development, IoT, and embedded system.{" "}
-          </p>
-        </div>
+    <div style={{ marginBottom: "5vh" }}>
+      {/* <div className="left" style={{ display: "flex", paddingRight: "2em" }}>
+      <img
+        style={{ width: "8em", height: "8em" }}
+        src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Phil_Collins_1_%28cropped%29.jpg"
+      />
+    </div> */}
+      <div className="right">
+        <h1 style={{ marginBottom: 0 }}>Airlangga R. Fidiyanto</h1>
+        <h3 style={{ margin: 0, fontSize: "1.1em" }}>
+          Front-end Developer and IoT Enthusiast
+        </h3>
+        <p>
+          Long life learner software engineer mainly focused on Web Development
+          and UI/UX design. Interested in computer science, web development,
+          IoT, and embedded system.{" "}
+        </p>
       </div>
+    </div>
+  );
+};
+
+const ProjectSection = () => {
+  return (
+    <div>
       <div>
         <h2>
           <span style={{ paddingLeft: 0 }}>🛠️ Projects</span>
         </h2>
       </div>
-      <div style={{ display: "flex", flexWrap: "wrap", margin: "2.2em 0" }}>
+      <div
+        className="project-container"
+        style={{ display: "flex", flexWrap: "wrap", margin: "2.2em 0" }}
+      >
         {PROJECTS.slice(0)
           .reverse()
           .map((project, i) => (
-            <div key={i} style={{ width: "33.33%" }}>
+            <div className="card" key={i}>
               <ProjectCard {...project} />
             </div>
           ))}
       </div>
+    </div>
+  );
+};
+
+const TechStackSection = () => {
+  return (
+    <div>
       <div>
         <h2>
           <span style={{ paddingLeft: 0 }}>🖥️ Tech Stacks</span>
@@ -54,14 +73,68 @@ function App() {
           ))}
         </div>
       </div>
+    </div>
+  );
+};
+
+const EducationSection = () => {
+  return (
+    <div>
       <div>
         <h2>
-          <span style={{ paddingLeft: 0 }}>📝 Let's Get Connected</span>
+          <span style={{ paddingLeft: 0 }}>🎓 Education</span>
         </h2>
-        <div style={{margin: "2em"}}>
-          <SendMail />
-        </div>
       </div>
+      <div className="education-container">
+        {EDUCATIONS.map((education, i) => (
+          <EducationCard {...education} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const ExperienceSection = () => {
+  return (
+    <div>
+      <div>
+        <h2>
+          <span style={{ paddingLeft: 0 }}>💼 Experience</span>
+        </h2>
+      </div>
+      <div>
+        {EXPERIENCES.slice(0)
+          .reverse()
+          .map((experience, i) => (
+            <ExperienceCard {...experience} />
+          ))}
+      </div>
+    </div>
+  );
+};
+
+const SocialSection = () => {
+  return (
+    <div>
+      <h2>
+        <span style={{ paddingLeft: 0 }}>📝 Let's Get Connected</span>
+      </h2>
+      <div className="home-mail-container" style={{ margin: "2em" }}>
+        <SendMail />
+      </div>
+    </div>
+  );
+};
+
+function App() {
+  return (
+    <>
+      <TitleSection />
+      <ProjectSection />
+      <ExperienceSection />
+      <EducationSection />
+      <TechStackSection />
+      <SocialSection />
     </>
   );
 }

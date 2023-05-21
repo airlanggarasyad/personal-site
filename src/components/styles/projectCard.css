@@ -1,8 +1,17 @@
+.project-card-container {
+  min-height: 19rem;
+}
 .project-card-container:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 h3 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-card-container {
+    margin: 0.5em 0.3em !important;
+  }
 }

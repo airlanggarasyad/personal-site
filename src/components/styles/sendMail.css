@@ -1,0 +1,13 @@
+.social-info:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .social-container {
+    flex-direction: column;
+  }
+
+  .social-container div {
+    width: 100% !important;
+  }
+}

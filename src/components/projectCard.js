@@ -75,7 +75,7 @@ const CardStyle = {
     margin: "1em",
     boxShadow: "0px 0px 6px 2px rgba(0,0,0,0.05)",
     transition: "0.3s",
-    height: "36vh",
+    height: "auto",
   },
   projectImage: {
     borderRadius: "8px",
