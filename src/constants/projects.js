@@ -11,7 +11,7 @@ const PROJECTS = [
   {
     id: 1,
     title: "Kembara Loka",
-    link: "https://github.com/airlanggarasyad/ppsmb2021",
+    link: "https://github.com/cherryplcked/ppsmb2021",
     isConfidential: false,
     imageURL: process.env.PUBLIC_URL + "/img/homepage/projects/kembara-loka.webp",
     techStacks: ["React.js", "Three.js"],
@@ -56,7 +56,7 @@ const PROJECTS = [
   {
     id: 5,
     title: "Bus Tracker",
-    link: "https://github.com/airlanggarasyad/bus-tracker",
+    link: "https://github.com/cherryplcked/bus-tracker",
     isConfidential: false,
     imageURL: process.env.PUBLIC_URL + "/img/homepage/projects/bus-tracker.webp",
     techStacks: ["STM32", "LoRa"],
