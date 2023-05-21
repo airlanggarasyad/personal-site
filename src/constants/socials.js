@@ -8,8 +8,8 @@ import {
 const SOCIAL = [
   {
     title: "GitHub",
-    socialName: "airlanggarasyad",
-    socialURL: "github.com/airlanggarasyad",
+    socialName: "cherryplcked",
+    socialURL: "github.com/cherryplcked",
     socialComponent: (
       <FaGithub color="#333" size={40} style={{ marginRight: "0.5em" }} />
     ),
