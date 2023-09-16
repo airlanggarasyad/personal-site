@@ -1,8 +1,12 @@
 import ProjectCard from "./components/projectCard";
 import SendMail from "./components/sendMail";
+import EducationCard from "./components/education";
+import ExperienceCard from "./components/experiences";
 
 import PROJECTS from "./constants/projects";
 import TECH_STACKS from "./constants/techStacks";
+import EDUCATIONS from "./constants/educations";
+import EXPERIENCES from "./constants/experiences";
 
 import "./App.css";
 
@@ -50,6 +54,13 @@ const ProjectSection = () => {
             </div>
           ))}
       </div>
+    </div>
+  );
+};
+
+const TechStackSection = () => {
+  return (
+    <div>
       <div>
         <h2>
           <span style={{ paddingLeft: 0 }}>🖥️ Tech Stacks</span>
@@ -61,6 +72,42 @@ const ProjectSection = () => {
             </div>
           ))}
         </div>
+      </div>
+    </div>
+  );
+};
+
+const EducationSection = () => {
+  return (
+    <div>
+      <div>
+        <h2>
+          <span style={{ paddingLeft: 0 }}>🎓 Education</span>
+        </h2>
+      </div>
+      <div className="education-container">
+        {EDUCATIONS.map((education, i) => (
+          <EducationCard {...education} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const ExperienceSection = () => {
+  return (
+    <div>
+      <div>
+        <h2>
+          <span style={{ paddingLeft: 0 }}>💼 Experience</span>
+        </h2>
+      </div>
+      <div>
+        {EXPERIENCES.slice(0)
+          .reverse()
+          .map((experience, i) => (
+            <ExperienceCard {...experience} />
+          ))}
       </div>
     </div>
   );
@@ -84,6 +131,9 @@ function App() {
     <>
       <TitleSection />
       <ProjectSection />
+      <ExperienceSection />
+      <EducationSection />
+      <TechStackSection />
       <SocialSection />
     </>
   );
