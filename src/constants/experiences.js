@@ -33,7 +33,7 @@ const EXPERIENCES = [
       {
         name: "Web Designer",
         startDate: "Oct. 2022",
-        endDate: "Present",
+        endDate: "Jan. 2023",
         points: [
           "Redesigned SiapDOK’s landing page using WordPress and Elementor page builder",
           "Collaborate with SEO team to optimize website performance and SEO rate",
