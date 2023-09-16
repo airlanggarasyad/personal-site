@@ -50,7 +50,7 @@ const EXPERIENCES = [
       {
         name: "Front-end Developer",
         startDate: "Nov. 2022",
-        endDate: "Present",
+        endDate: "May. 2023",
         points: [
           "Rebranding and doing adjustment for AVTER System and AVTER Customer for Rimbun Air, Asia Cargo Network Group, and Black Stone Airlines (Raffles Global Asia)",
           "Developed transit flight and translation feature for both AVTER System and AVTER Customer using Laravel framework",
