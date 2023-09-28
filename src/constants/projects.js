@@ -59,7 +59,7 @@ const PROJECTS = [
     link: "https://github.com/cherryplcked/bus-tracker",
     isConfidential: false,
     imageURL: process.env.PUBLIC_URL + "/img/homepage/projects/bus-tracker.webp",
-    techStacks: ["STM32", "LoRa"],
+    techStacks: ["STM32", "GNSS", "C"],
     description: "My bachelor thesis project. Vehicle tracker system for Trans Gadjah Mada using STM32-WL55JC1 and Teseo-LIV3FL GNSS Module.",
   },
 ];

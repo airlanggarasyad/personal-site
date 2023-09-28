@@ -1,7 +1,7 @@
 const EXPERIENCES = [
   {
     institution: "PT Inamas Sintesis Teknologi",
-    imageURL: "http://inastek.com/Images/logo.png",
+    imageURL: process.env.PUBLIC_URL + "/img/homepage/experiences/inastek.webp",
     imageDim: "38px",
     positions: [
       {
@@ -17,8 +17,7 @@ const EXPERIENCES = [
   },
   {
     institution: "SiapDOK",
-    imageURL:
-      "https://siapdok.id/wp-content/uploads/2022/05/cropped-71AE19BA-B0A3-4D36-84FA-1666729C2625.png",
+    imageURL: process.env.PUBLIC_URL + "/img/homepage/experiences/siapdok.webp",
     imageDim: "40px",
     positions: [
       {
@@ -44,7 +43,7 @@ const EXPERIENCES = [
   },
   {
     institution: "PT Aviasi Jaya Indonesia",
-    imageURL: "https://avter.co.id/images/avter_logo.png",
+    imageURL: process.env.PUBLIC_URL + "/img/homepage/experiences/avter.webp",
     imageDim: "50px",
     positions: [
       {

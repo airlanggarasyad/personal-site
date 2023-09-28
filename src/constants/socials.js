@@ -8,8 +8,8 @@ import {
 const SOCIAL = [
   {
     title: "GitHub",
-    socialName: "cherryplcked",
-    socialURL: "github.com/cherryplcked",
+    socialName: "airlanggarasyad",
+    socialURL: "https://www.github.com/airlanggarasyad",
     socialComponent: (
       <FaGithub color="#333" size={40} style={{ marginRight: "0.5em" }} />
     ),
@@ -18,7 +18,7 @@ const SOCIAL = [
   {
     title: "Stack Overflow",
     socialName: "Airlangga Fidiyanto",
-    socialURL: "airlanggarasyad.com",
+    socialURL: "https://www.airlanggarasyad.com",
     socialComponent: (
       <FaStackOverflow
         color="#f48024"
@@ -31,7 +31,7 @@ const SOCIAL = [
   {
     title: "Instagram",
     socialName: "airlanggarasyad",
-    socialURL: "instagram.com/airlanggarasyad",
+    socialURL: "https://www.instagram.com/airlanggarasyad",
     socialComponent: (
       <FaInstagram color="#833ab4" size={40} style={{ marginRight: "0.5em" }} />
     ),

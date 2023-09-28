@@ -1,5 +1,9 @@
 const TECH_STACKS = [
     {
+        title: "TensorFlow",
+        imageURL:"https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
+    },
+    {
         title: "React.js",
         imageURL:"https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
     },
@@ -18,14 +22,6 @@ const TECH_STACKS = [
     {
         title: "Python",
         imageURL:"https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-    },
-    {
-        title: "STM32",
-        imageURL:"https://upload.wikimedia.org/wikipedia/commons/1/17/STMicroelectronics-Logo.svg"
-    },
-    {
-        title: "Arduino",
-        imageURL:"https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg"
     },
 ];
 

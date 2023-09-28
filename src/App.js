@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 import ProjectCard from "./components/projectCard";
 import SendMail from "./components/sendMail";
 import EducationCard from "./components/education";
@@ -22,12 +24,12 @@ const TitleSection = () => {
       <div className="right">
         <h1 style={{ marginBottom: 0 }}>Airlangga R. Fidiyanto</h1>
         <h3 style={{ margin: 0, fontSize: "1.1em" }}>
-          Front-end Developer and IoT Enthusiast
+          (Now a) software engineer
         </h3>
         <p>
-          Long life learner software engineer mainly focused on Web Development
+          {/* Long life learner software engineer mainly focused on Web Development
           and UI/UX design. Interested in computer science, web development,
-          IoT, and embedded system.{" "}
+          IoT, and embedded system.{" "} */}
         </p>
       </div>
     </div>
@@ -35,6 +37,15 @@ const TitleSection = () => {
 };
 
 const ProjectSection = () => {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+  const initialDisplayCount = 3;
+
+  const handleToggleProjects = () => {
+    setShowAllProjects(!showAllProjects);
+  };
+
+  const reversedProjects = PROJECTS.slice().reverse();
+
   return (
     <div>
       <div>
@@ -42,17 +53,17 @@ const ProjectSection = () => {
           <span style={{ paddingLeft: 0 }}>🛠️ Projects</span>
         </h2>
       </div>
-      <div
-        className="project-container"
-        style={{ display: "flex", flexWrap: "wrap", margin: "2.2em 0" }}
-      >
-        {PROJECTS.slice(0)
-          .reverse()
-          .map((project, i) => (
+      <div className="project-container" style={{ display: 'flex', flexWrap: 'wrap', margin: '2.2em 0', justifyContent: 'center' }}>
+        <div style={{display: 'flex', flexWrap: 'wrap'}}>
+          {reversedProjects.slice(0, showAllProjects ? undefined : initialDisplayCount).map((project, i) => (
             <div className="card" key={i}>
               <ProjectCard {...project} />
             </div>
           ))}
+        </div>
+        <button onClick={handleToggleProjects} style={{ marginTop: '1em' }} className='show-more-button'>
+        {showAllProjects ? 'Show Less' : 'Show More'}
+      </button>
       </div>
     </div>
   );
