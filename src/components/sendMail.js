@@ -71,7 +71,7 @@ const SendMail = () => {
             <h3 style={{ fontSize: "1.5 em" }}>📱 Or visit my social media</h3>
             <div style={{ margin:"0.8em 0"}}>
               {SOCIALS.map((social, i) => (
-                <a href={social.socialURL}>
+                <a key={i} href={social.socialURL}>
                   <div style={style.socialIcon}>
                     {social.socialComponent}
                     <div className="social-info" style={{ display: "flex", flexDirection: "column", margin:"0.3em 0" }}>

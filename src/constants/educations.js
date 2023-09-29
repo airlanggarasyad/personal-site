@@ -3,7 +3,7 @@ const EDUCATIONS = [
         institution: "Universitas Gadjah Mada",
         educationDesc:[<i>BEng (S.T.) in Electrical Engineering</i>],
         imageDim: "60px",
-        imageURL: process.env.PUBLIC_URL + "/img/homepage/educations/ugm.webp",
+        imageURL: "https://firebasestorage.googleapis.com/v0/b/airlanggarasyad-b7ca9.appspot.com/o/educations%2Fugm.webp?alt=media&token=dfa1637c-1864-4a1a-935a-fb137aa65722&_gl=1*1udhnpk*_ga*NjY1ODI4MzYyLjE2OTU4OTg2NTU.*_ga_CW55HF8NVT*MTY5NTk2MTcxMS40LjEuMTY5NTk2MzA3NC42MC4wLjA",
         startDate: "Aug. 2019",
         endDate: "Jun. 2023",
         points: [

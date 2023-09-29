@@ -1,28 +1,33 @@
 const TECH_STACKS = [
     {
+        id: 5,
         title: "TensorFlow",
-        imageURL:"https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
+        imageURL: "stacks/tensorflow.webp"
     },
     {
-        title: "React.js",
-        imageURL:"https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+        id: 4,
+        title: "Tableau",
+        imageURL: "stacks/tableau.webp"
     },
     {
+        id: 3,
+        title: "NEXT.js",
+        imageURL: "stacks/nextjs.webp"
+    },
+    {
+        id: 2,
         title: "JavaScript",
-        imageURL:"https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+        imageURL: "stacks/js.webp"
     },
     {
-        title: "Laravel",
-        imageURL:"https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
-    },
-    {
-        title: "C",
-        imageURL:"https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"
-    },
-    {
+        id: 1,
         title: "Python",
-        imageURL:"https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+        imageURL: "stacks/python.webp"
     },
+    {id: 0,
+        title: "C",
+        imageURL: "stacks/c.webp"
+    }
 ];
 
 export default TECH_STACKS;
