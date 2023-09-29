@@ -59,6 +59,21 @@ const EXPERIENCES = [
       },
     ],
   },
+  {
+    institution: "PT Bank Rakyat Indonesia (Persero) Tbk",
+    imageURL: "https://i0.wp.com/febi.uinsaid.ac.id/wp-content/uploads/2020/11/Logo-BRI-Bank-Rakyat-Indonesia-PNG-Terbaru.png?ssl=1",
+    imageDim: "44px",
+    positions: [
+      {
+        name: "BRIlian Future Leaders Program - IT",
+        startDate: "Oct. 2023",
+        endDate: "present",
+        points: [
+          
+        ],
+      },
+    ],
+  },
 ];
 
 export default EXPERIENCES;
