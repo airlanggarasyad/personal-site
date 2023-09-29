@@ -1,8 +1,27 @@
 import "./styles/projectCard.css";
 
+import { useState, useEffect } from "react";
+import fetchImage from "../services/fetchImage";
+
 const ProjectCard = (props) => {
+  const [imageUrl, setImageUrl] = useState("");
+
+  useEffect(() => {
+    fetchImage(props.imageURL)
+      .then((url) => {
+        setImageUrl(url);
+      })
+      .catch((error) => {
+        console.error("Error downloading image: ", error);
+      });
+  }, []);
+
   return (
-    <a  target="_blank" href={props.link} style={{textDecoration: "none", color:"black"}}>
+    <a
+      target="_blank"
+      href={props.link}
+      style={{ textDecoration: "none", color: "black" }}
+    >
       <div
         className="project-card-container"
         style={CardStyle.projectCardContainer}
@@ -10,7 +29,7 @@ const ProjectCard = (props) => {
         <img
           className="project-img"
           style={CardStyle.projectImage}
-          src={props.imageURL}
+          src={imageUrl}
         />
         <div
           className="content-contaiener"
